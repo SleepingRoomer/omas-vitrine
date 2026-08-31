@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OMAS — Organisation Musulmane des Acteurs de Santé</title>
+<meta name="description" content="L'OMAS rassemble étudiants et professionnels de santé dans toute la France autour d'une exigence partagée d'excellence, d'éthique et de service.">
+<link rel="icon" href="assets/logo-omas.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement">
+  <i class="ph-fill ph-megaphone"></i>
+  <span>Assemblée générale nationale, novembre 2026</span>
+  <a href="rejoindre.html">En savoir plus →</a>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/logo-omas.png" alt="OMAS">
+      <span>OMAS</span>
+    </a>
+
+    <button type="button" class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <i class="ph ph-list"></i>
+    </button>
+
+    <nav class="nav">
+      <a href="association.html" class="nav-link">L'association</a>
+      <a href="actions.html" class="nav-link">Nos actions</a>
+      <div class="dropdown">
+        <a href="rejoindre.html" class="nav-link dropdown-trigger">Nous rejoindre <i class="ph ph-caret-down"></i></a>
+        <div class="dropdown-panel">
+          <div class="dropdown-card">
+            <a href="rejoindre.html" class="dropdown-item">
+              <strong>Vue générale</strong>
+              <small>Adhésion, parcours, localités</small>
+            </a>
+            <a href="rejoindre.html#benevolat" class="dropdown-item">
+              <strong>Marketplace missions &amp; jobs</strong>
+              <small>Appels à candidatures, bénévolat</small>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="ressources.html" class="nav-link">Ressources</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="rejoindre.html" class="nav-cta">Adhérer</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-blob-a"></div>
+  <div class="hero-blob-b"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Organisation Musulmane des Acteurs de Santé</div>
+      <h1>Accompagner,<br>servir et fédérer <br>les acteurs de santé</h1>
+      <p class="hero-lead">L'OMAS rassemble étudiants et professionnels de santé dans toute la France autour d'une exigence partagée d'excellence, d'éthique et de service, au bénéfice de ses membres comme de la santé de tous.</p>
+      <div class="hero-actions">
+        <a href="rejoindre.html" class="btn btn-primary">Rejoindre l'OMAS <i class="ph ph-arrow-right"></i></a>
+        <a href="actions.html" class="btn btn-secondary">Découvrir nos actions</a>
+      </div>
+      <div class="hero-facts">
+        <span><i class="ph-fill ph-check-circle"></i> Association de loi 1901</span>
+        <span><i class="ph-fill ph-map-pin"></i> Présente dans 12 villes</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="placeholder-photo hero-photo">
+        <span>[ photo · membres OMAS en action ]</span>
+      </div>
+      <div class="hero-badge">
+        <div class="hero-badge-icon"><i class="ph-fill ph-hand-heart"></i></div>
+        <div>
+          <strong>Depuis 11 ans</strong>
+          <small>au service de la santé</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SELECTEUR DE PROFIL -->
+<section id="profils" class="profiles-section">
+  <div class="wrap">
+    <div class="profiles-intro">
+      <div class="section-eyebrow">Trouvez votre place</div>
+      <h2>Vous êtes… ?</h2>
+      <p>Chaque parcours a sa porte d'entrée. Choisissez qui vous êtes : nous vous montrons directement ce qui vous concerne.</p>
+    </div>
+
+    <div class="profile-tabs" id="profile-tabs"></div>
+
+    <div class="profile-panel">
+      <div class="profile-panel-content">
+        <div class="profile-tag" id="profile-tag"></div>
+        <h3 class="profile-title" id="profile-title"></h3>
+        <p class="profile-desc" id="profile-desc"></p>
+        <ul class="profile-bullets" id="profile-bullets"></ul>
+        <a href="rejoindre.html" class="profile-cta" id="profile-cta"></a>
+      </div>
+      <div class="profile-visual">
+        <span id="profile-visual-label"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION TRIPTYCH -->
+<section class="mission-section">
+  <div class="mission-blob-a"></div>
+  <div class="mission-blob-b"></div>
+  <div class="wrap">
+    <div class="mission-intro">
+      <div class="section-eyebrow">Notre mission</div>
+      <h2>Trois verbes, un même engagement</h2>
+    </div>
+    <div class="mission-grid">
+      <div class="mission-item">
+        <div class="mission-num">01</div>
+        <h3>Accompagner</h3>
+        <p>Les soignants, de la première année d'études à l'exercice mature, vers la compétence et l'éthique.</p>
+      </div>
+      <div class="mission-item">
+        <div class="mission-num">02</div>
+        <h3>Servir</h3>
+        <p>La santé de tous par la prévention, le dépistage et l'éducation, au profit de la population.</p>
+      </div>
+      <div class="mission-item">
+        <div class="mission-num">03</div>
+        <h3>Fédérer</h3>
+        <p>Un réseau intergénérationnel d'excellence, du premier tutorat au professionnel installé.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHIFFRES CLÉS -->
+<section class="stats-section">
+  <div class="stats-blob"></div>
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat">
+        <strong>12</strong>
+        <span>localités actives</span>
+      </div>
+      <div class="stat gold">
+        <strong>6</strong>
+        <span>filières de santé</span>
+      </div>
+      <div class="stat">
+        <strong>3</strong>
+        <span>pôles d'action</span>
+      </div>
+      <div class="stat gold">
+        <strong>11</strong>
+        <span>ans d'engagement</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUI SOMMES-NOUS -->
+<section class="wrap about-section">
+  <div>
+    <div class="placeholder-photo about-photo">
+      <span>[ photo · rencontre communautaire ]</span>
+    </div>
+  </div>
+  <div>
+    <div class="section-eyebrow">Qui sommes-nous</div>
+    <h2>Une association nationale, indépendante et ouverte à tous</h2>
+    <p>L'OMAS fédère des étudiants et professionnels de santé (médecine, pharmacie, odontologie, psychologie, kinésithérapie, ostéopathie et d'autres filières en construction). Elle s'inspire de la tradition islamique pour son exigence d'intégrité et de service, et accueille avec la même bienveillance toutes celles et ceux qui partagent ses valeurs.</p>
+    <div class="about-values">
+      <div><i class="ph-fill ph-star"></i><span>Trois valeurs : indépendance, excellence et bienveillance</span></div>
+    </div>
+    <a href="association.html" class="link-arrow">Découvrir l'association <i class="ph ph-arrow-right"></i></a>
+  </div>
+</section>
+
+<!-- NOS ACTIONS -->
+<section class="actions-section">
+  <div class="wrap">
+    <div class="actions-head">
+      <div>
+        <div class="section-eyebrow">Au service de tous</div>
+        <h2 class="section-title">Nos actions pour le grand public</h2>
+      </div>
+      <a href="actions.html" class="link-arrow">Toutes nos actions <i class="ph ph-arrow-right"></i></a>
+    </div>
+    <div class="actions-grid">
+      <div class="action-card">
+        <div class="action-icon" style="background:rgba(0,160,154,0.12);"><i class="ph ph-first-aid-kit" style="font-size:30px;color:#00A09A;"></i></div>
+        <h3>Prévention</h3>
+        <p>Campagnes de prévention et de sensibilisation, dont la santé pendant le Ramadan.</p>
+      </div>
+      <div class="action-card">
+        <div class="action-icon" style="background:rgba(200,169,81,0.16);"><i class="ph ph-heartbeat" style="font-size:30px;color:#C8A951;"></i></div>
+        <h3>Dépistages</h3>
+        <p>Journées de dépistage au plus près des quartiers et des associations communautaires.</p>
+      </div>
+      <div class="action-card">
+        <div class="action-icon" style="background:rgba(45,47,132,0.1);"><i class="ph ph-lifebuoy" style="font-size:30px;color:#2D2F84;"></i></div>
+        <h3>Formations premiers secours</h3>
+        <p>Formations aux gestes qui sauvent, ouvertes gratuitement au grand public.</p>
+      </div>
+      <div class="action-card">
+        <div class="action-icon" style="background:rgba(0,160,154,0.12);"><i class="ph ph-microphone-stage" style="font-size:30px;color:#00A09A;"></i></div>
+        <h3>Conférences</h3>
+        <p>Rencontres et forums ouverts, pour porter la santé dans le débat public.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCALITÉS -->
+<section class="wrap localities-section">
+  <div>
+    <div class="section-eyebrow">Notre maillage</div>
+    <h2>Un réseau présent <br>partout en France</h2>
+    <p>Douze localités actives animent la vie de l'OMAS sur leur territoire, des grandes métropoles aux cellules en émergence. Et si votre ville n'a pas encore d'antenne ? Vous pouvez adhérer et contribuer à en créer une.</p>
+    <div class="locality-tags">
+      <span class="locality-tag">Île-de-France</span>
+      <span class="locality-tag">Bordeaux</span>
+      <span class="locality-tag">Lille</span>
+      <span class="locality-tag">Toulouse</span>
+      <span class="locality-tag">Tours</span>
+      <span class="locality-tag muted">+ 7 autres villes</span>
+    </div>
+    <a href="rejoindre.html" class="link-arrow">Voir toutes les localités <i class="ph ph-arrow-right"></i></a>
+  </div>
+  <div class="locality-map">
+    <span style="font-family:ui-monospace,Menlo,monospace;font-size:13px;letter-spacing:0.06em;color:#9A9AA6;text-transform:uppercase;background:rgba(251,250,248,0.85);padding:10px 16px;border-radius:8px;">[ carte de France · localités ]</span>
+  </div>
+</section>
+
+<!-- REJOINDRE CTA -->
+<section class="involve-section">
+  <div class="wrap">
+    <div class="involve-intro">
+      <div class="section-eyebrow">S'engager</div>
+      <h2>Trois façons de faire <br>partie de l'aventure</h2>
+    </div>
+    <div class="involve-grid">
+      <div class="involve-card dark">
+        <div class="involve-icon" style="background:rgba(255,255,255,0.1);"><i class="ph-fill ph-user-plus" style="font-size:32px;color:#C8A951;"></i></div>
+        <h3>Adhérer</h3>
+        <p>Étudiant ou professionnel, rejoignez la communauté et accédez à l'accompagnement, aux événements et au réseau.</p>
+        <a href="rejoindre.html">J'adhère <i class="ph ph-arrow-right"></i></a>
+      </div>
+      <div class="involve-card light">
+        <div class="involve-icon" style="background:rgba(0,160,154,0.12);"><i class="ph-fill ph-users-three" style="font-size:32px;color:#00A09A;"></i></div>
+        <h3>Devenir bénévole</h3>
+        <p>Des postes à pourvoir dans chaque localité, et la possibilité de proposer votre candidature à tout moment.</p>
+        <a href="rejoindre.html#benevolat" class="teal-link">Voir les missions <i class="ph ph-arrow-right"></i></a>
+      </div>
+      <div class="involve-card light">
+        <div class="involve-icon" style="background:rgba(200,169,81,0.16);"><i class="ph-fill ph-hand-coins" style="font-size:32px;color:#C8A951;"></i></div>
+        <h3>Nous soutenir</h3>
+        <p>Indépendante des subventions publiques, l'OMAS compte sur votre don pour porter ses actions au service de tous.</p>
+        <a href="contact.html" class="gold-link">Faire un don <i class="ph ph-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA BAND -->
+<section class="final-cta">
+  <div class="final-cta-blob-a"></div>
+  <div class="final-cta-blob-b"></div>
+  <div class="final-cta-inner">
+    <h2>Prêt à rejoindre l'OMAS ?</h2>
+    <p>Étudiant, professionnel, partenaire ou simple citoyen : il y a une place pour chacun dans le projet OMAS.</p>
+    <div class="final-cta-actions">
+      <a href="rejoindre.html" class="btn btn-gold">Adhérer maintenant <i class="ph ph-arrow-right"></i></a>
+      <a href="contact.html" class="btn btn-ghost">Nous contacter</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <img src="assets/logo-omas.png" alt="OMAS">
+          <span>OMAS</span>
+        </div>
+        <p>Organisation Musulmane des Acteurs de Santé. Accompagner, servir, fédérer, au service de la santé de tous.</p>
+        <div class="footer-socials">
+          <a href="contact.html" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+          <a href="contact.html" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+          <a href="contact.html" aria-label="E-mail"><i class="ph ph-envelope-simple"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-heading">Explorer</div>
+        <div class="footer-links">
+          <a href="association.html">L'association</a>
+          <a href="actions.html">Nos actions</a>
+          <a href="rejoindre.html">Nous rejoindre</a>
+          <a href="contact.html">Contact</a>
+          <a href="ressources.html">Ressources</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-heading">Agir</div>
+        <div class="footer-links">
+          <a href="rejoindre.html">Adhérer</a>
+          <a href="parcours.html">Le parcours omassien</a>
+          <a href="contact.html">Faire un don</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-heading">Rester informé</div>
+        <p class="footer-note">Recevez nos actualités et nos rendez-vous.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <label for="newsletter-email" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Votre e-mail</label>
+          <input type="email" id="newsletter-email" placeholder="Votre e-mail" required>
+          <button type="submit" aria-label="S'inscrire"><i class="ph ph-paper-plane-tilt"></i></button>
+        </form>
+        <p class="newsletter-note" id="newsletter-note"></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 OMAS · Association loi 1901 · Indépendante</span>
+      <div class="footer-legal">
+        <a href="contact.html">Mentions légales</a>
+        <a href="contact.html">Confidentialité</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
