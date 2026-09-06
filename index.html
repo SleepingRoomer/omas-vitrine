@@ -37,21 +37,7 @@
     <nav class="nav">
       <a href="association.html" class="nav-link">L'association</a>
       <a href="actions.html" class="nav-link">Nos actions</a>
-      <div class="dropdown">
-        <a href="rejoindre.html" class="nav-link dropdown-trigger">Nous rejoindre <i class="ph ph-caret-down"></i></a>
-        <div class="dropdown-panel">
-          <div class="dropdown-card">
-            <a href="rejoindre.html" class="dropdown-item">
-              <strong>Vue générale</strong>
-              <small>Adhésion, parcours, localités</small>
-            </a>
-            <a href="rejoindre.html#benevolat" class="dropdown-item">
-              <strong>Marketplace missions &amp; jobs</strong>
-              <small>Appels à candidatures, bénévolat</small>
-            </a>
-          </div>
-        </div>
-      </div>
+      <a href="rejoindre.html" class="nav-link">Nous rejoindre</a>
       <a href="ressources.html" class="nav-link">Ressources</a>
       <a href="contact.html" class="nav-link">Contact</a>
       <a href="rejoindre.html" class="nav-cta">Adhérer</a>
@@ -78,8 +64,8 @@
       </div>
     </div>
     <div class="hero-visual">
-      <div class="placeholder-photo hero-photo">
-        <span>[ photo · membres OMAS en action ]</span>
+      <div class="hero-photo" style="border-radius:26px;overflow:hidden;border:1px solid rgba(45,47,132,0.06);">
+        <img src="assets/photo-hero.jpg" alt="Membres OMAS en action" class="photo-cover">
       </div>
       <div class="hero-badge">
         <div class="hero-badge-icon"><i class="ph-fill ph-hand-heart"></i></div>
@@ -112,7 +98,7 @@
         <a href="rejoindre.html" class="profile-cta" id="profile-cta"></a>
       </div>
       <div class="profile-visual">
-        <span id="profile-visual-label"></span>
+        <img src="assets/photo-profils.jpg" alt="Membres OMAS">
       </div>
     </div>
   </div>
@@ -201,20 +187,26 @@
       <a href="actions.html" class="link-arrow">Toutes nos actions <i class="ph ph-arrow-right"></i></a>
     </div>
     <div class="actions-grid">
-      <div class="action-card">
-        <div class="action-icon" style="background:rgba(0,160,154,0.12);"><i class="ph ph-first-aid-kit" style="font-size:30px;color:#00A09A;"></i></div>
-        <h3>Prévention</h3>
-        <p>Campagnes de prévention et de sensibilisation, dont la santé pendant le Ramadan.</p>
+      <div class="action-card with-photo">
+        <img src="assets/photo-prevention.jpg" alt="Prévention et sensibilisation" class="action-photo">
+        <div class="action-body">
+          <h3>Prévention</h3>
+          <p>Campagnes de prévention et de sensibilisation, dont la santé pendant le Ramadan.</p>
+        </div>
       </div>
-      <div class="action-card">
-        <div class="action-icon" style="background:rgba(200,169,81,0.16);"><i class="ph ph-heartbeat" style="font-size:30px;color:#C8A951;"></i></div>
-        <h3>Dépistages</h3>
-        <p>Journées de dépistage au plus près des quartiers et des associations communautaires.</p>
+      <div class="action-card with-photo">
+        <img src="assets/photo-depistage.jpg" alt="Journée de dépistage" class="action-photo">
+        <div class="action-body">
+          <h3>Dépistages</h3>
+          <p>Journées de dépistage au plus près des quartiers et des associations communautaires.</p>
+        </div>
       </div>
-      <div class="action-card">
-        <div class="action-icon" style="background:rgba(45,47,132,0.1);"><i class="ph ph-lifebuoy" style="font-size:30px;color:#2D2F84;"></i></div>
-        <h3>Formations premiers secours</h3>
-        <p>Formations aux gestes qui sauvent, ouvertes gratuitement au grand public.</p>
+      <div class="action-card with-photo">
+        <img src="assets/photo-premiers-secours.jpg" alt="Formation premiers secours" class="action-photo">
+        <div class="action-body">
+          <h3>Formations premiers secours</h3>
+          <p>Formations aux gestes qui sauvent, ouvertes gratuitement au grand public.</p>
+        </div>
       </div>
       <div class="action-card">
         <div class="action-icon" style="background:rgba(0,160,154,0.12);"><i class="ph ph-microphone-stage" style="font-size:30px;color:#00A09A;"></i></div>
@@ -241,8 +233,8 @@
     </div>
     <a href="rejoindre.html" class="link-arrow">Voir toutes les localités <i class="ph ph-arrow-right"></i></a>
   </div>
-  <div class="locality-map">
-    <span style="font-family:ui-monospace,Menlo,monospace;font-size:13px;letter-spacing:0.06em;color:#9A9AA6;text-transform:uppercase;background:rgba(251,250,248,0.85);padding:10px 16px;border-radius:8px;">[ carte de France · localités ]</span>
+  <div class="locality-map" style="overflow:hidden;">
+    <iframe src="omas-france-map.html" class="map-embed" title="Carte des localités OMAS" loading="lazy"></iframe>
   </div>
 </section>
 
@@ -264,7 +256,7 @@
         <div class="involve-icon" style="background:rgba(0,160,154,0.12);"><i class="ph-fill ph-users-three" style="font-size:32px;color:#00A09A;"></i></div>
         <h3>Devenir bénévole</h3>
         <p>Des postes à pourvoir dans chaque localité, et la possibilité de proposer votre candidature à tout moment.</p>
-        <a href="rejoindre.html#benevolat" class="teal-link">Voir les missions <i class="ph ph-arrow-right"></i></a>
+        <a href="rejoindre.html" class="teal-link">Voir les missions <i class="ph ph-arrow-right"></i></a>
       </div>
       <div class="involve-card light">
         <div class="involve-icon" style="background:rgba(200,169,81,0.16);"><i class="ph-fill ph-hand-coins" style="font-size:32px;color:#C8A951;"></i></div>

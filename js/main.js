@@ -10,13 +10,12 @@
       title: "Grandir, entouré de celles et ceux qui sont passés avant vous",
       desc: "L'adhésion à l'OMAS est simple, ouverte à tous, sans sélection : tutorat, concours blancs, communauté de votre filière. Le parcours omassien va plus loin : une formation intégrale accessible sur candidature, dès la rentrée.",
       bullets: [
-        "Adhésion simple à 30 € / an (20 € pour les boursiers, exonération possible)",
+        "Adhésion simple à 30 € / an (20 € pour les boursiers)",
         "Tutorat et concours blancs, ouverts à tous les adhérents",
         "Le parcours omassien, sur candidature dès la rentrée"
       ],
       ctaLabel: "Découvrir l'adhésion étudiante",
-      ctaHref: "rejoindre.html",
-      imageLabel: "photo · étudiants en tutorat"
+      ctaHref: "rejoindre.html"
     },
     {
       id: "professionnel",
@@ -31,8 +30,7 @@
         "Événements et rencontres du réseau professionnel"
       ],
       ctaLabel: "Découvrir l'adhésion professionnelle",
-      ctaHref: "rejoindre.html",
-      imageLabel: "photo · soignant en exercice"
+      ctaHref: "rejoindre.html"
     },
     {
       id: "association",
@@ -47,8 +45,7 @@
         "Rencontres Partenaires annuelles avec le réseau OMAS"
       ],
       ctaLabel: "Devenir partenaire",
-      ctaHref: "contact.html",
-      imageLabel: "photo · rencontre partenaires"
+      ctaHref: "contact.html"
     },
     {
       id: "particulier",
@@ -63,8 +60,7 @@
         "Soutenir l'OMAS par un don, en toute indépendance"
       ],
       ctaLabel: "Voir nos actions",
-      ctaHref: "actions.html",
-      imageLabel: "photo · action de prévention"
+      ctaHref: "actions.html"
     }
   ];
 
@@ -75,7 +71,6 @@
     var panelDesc = document.getElementById("profile-desc");
     var panelBullets = document.getElementById("profile-bullets");
     var panelCta = document.getElementById("profile-cta");
-    var panelVisual = document.getElementById("profile-visual-label");
     if (!tabsEl) return;
 
     function render(activeId) {
@@ -107,22 +102,9 @@
       arrow.className = "ph ph-arrow-right";
       panelCta.appendChild(arrow);
       panelCta.href = active.ctaHref;
-      panelVisual.textContent = "[ " + active.imageLabel + " ]";
     }
 
     render("etudiant");
-  }
-
-  function initDropdown() {
-    var dropdown = document.querySelector(".dropdown");
-    if (!dropdown) return;
-    var trigger = dropdown.querySelector(".dropdown-trigger");
-    trigger.addEventListener("click", function (e) {
-      if (window.matchMedia("(max-width: 980px)").matches) {
-        e.preventDefault();
-        dropdown.classList.toggle("open");
-      }
-    });
   }
 
   function initMobileNav() {
@@ -157,7 +139,6 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     initProfileSelector();
-    initDropdown();
     initMobileNav();
     initNewsletterForm();
   });
