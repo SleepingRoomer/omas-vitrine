@@ -18,6 +18,21 @@
       ctaHref: "rejoindre.html"
     },
     {
+      id: "interne",
+      label: "Interne",
+      icon: "ph ph-first-aid",
+      tag: "Dès l'internat",
+      title: "Rester relié à votre réseau, dès l'internat",
+      desc: "De l'externat à l'internat, l'OMAS reste à vos côtés : le soutien de votre filière et le réseau national, même en changeant de ville.",
+      bullets: [
+        "Adhésion interne à 50 € / an (le tarif du cap externat → internat)",
+        "Le soutien de votre filière, à vos côtés",
+        "Événements & entraide entre pairs"
+      ],
+      ctaLabel: "Découvrir l'adhésion interne",
+      ctaHref: "rejoindre.html"
+    },
+    {
       id: "professionnel",
       label: "Professionnel de santé",
       icon: "ph ph-briefcase-metal",
